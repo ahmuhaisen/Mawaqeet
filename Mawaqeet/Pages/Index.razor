@@ -5,7 +5,7 @@
 <div class="container mt-5">
     <Header CurrentAddress="@CurrentAddress" 
         CurrentTimeString="@CurrentTimeString" 
-        NextSalahRemainingTime="@(GetNextSalahRemainingTime(nextSalah!.time).ToString().Substring(0, 5))" 
+        NextSalahRemainingTime="@(Salah.GetNextSalahRemainingTime(nextSalah!.time).ToString().Substring(0, 5))" 
         Date="@date"
         NextSalah ="@nextSalah"/>
 
