@@ -1,6 +1,6 @@
 ﻿using Mawaqeet.DTOs;
 
-namespace Mawaqeet.Services;
+namespace Mawaqeet.Services.Interfaces;
 
 public interface IMawaqeetService
 {

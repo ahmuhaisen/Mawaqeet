@@ -1,5 +1,6 @@
 using Mawaqeet;
 using Mawaqeet.Services;
+using Mawaqeet.Services.Interfaces;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -13,7 +14,6 @@ builder.Services.AddScoped<IMawaqeetService, MawaqeetService>();
 
 builder.Services.AddScoped(hc => new HttpClient
 {
-    //Consider populate the value from appsettings / options
     BaseAddress = new Uri("https://api.aladhan.com/v1/")
 });
 
