@@ -1,0 +1,34 @@
+﻿@page "/"
+
+@inject IMawaqeetService MawaqeetService
+
+<div class="container mt-5">
+    <Header CurrentAddress="@CurrentAddress" 
+        CurrentTimeString="@CurrentTimeString" 
+        NextSalahRemainingTime="@(GetNextSalahRemainingTime(nextSalah!.time).ToString().Substring(0, 5))" 
+        Date="@date"
+        NextSalah ="@nextSalah"/>
+
+    <SalwatCards timings="@timings" />
+
+    <div class="row mt-4">
+        <div class="col-4">
+            <select class="form-select form-select-sm bg-dark border-secondary  rounded-0 text-white" @onchange="ChangeAddress">
+                <option selected disabled>
+                    اختر منطقة أخرى
+                </option>
+                <option value="Makkah">مكة المكرمة</option>
+                <option value="Quds">القدس الشريف</option>
+                <option value="Amman">عمّان</option>
+                <option value="Cairo">القاهرة</option>
+            </select>
+        </div>
+        <div class="col-8">
+            <p class="text-start fs-6 fw-light">
+                @meta.method.name
+                <i class="bi bi-file-earmark-medical-fill"></i>
+            </p>
+        </div>
+    </div>
+</div>
+
