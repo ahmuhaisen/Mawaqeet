@@ -1,4 +1,4 @@
-﻿using Mawaqeet.DTOs;
+﻿using Mawaqeet.Models;
 using Mawaqeet.Services.Interfaces;
 using System.Net.Http.Json;
 

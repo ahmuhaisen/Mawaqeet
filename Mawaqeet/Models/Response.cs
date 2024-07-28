@@ -1,4 +1,4 @@
-﻿namespace Mawaqeet.DTOs;
+﻿namespace Mawaqeet.Models;
 
 public class Response
 {

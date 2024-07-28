@@ -1,4 +1,4 @@
-﻿using Mawaqeet.DTOs;
+﻿using Mawaqeet.Models;
 
 namespace Mawaqeet.Services.Interfaces;
 

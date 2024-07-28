@@ -1,4 +1,4 @@
-﻿using Mawaqeet.DTOs;
+﻿using Mawaqeet.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace Mawaqeet.Pages;

@@ -1,4 +1,4 @@
-﻿namespace Mawaqeet.DTOs;
+﻿namespace Mawaqeet.Models;
 
 public class Salah
 {
@@ -14,6 +14,6 @@ public class Salah
         if (nextSalahDateTime < DateTime.Now)
             nextSalahDateTime = nextSalahDateTime.AddDays(1);
 
-        return (nextSalahDateTime - DateTime.Now);
+        return nextSalahDateTime - DateTime.Now;
     }
 }
